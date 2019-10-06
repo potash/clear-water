@@ -36,8 +36,8 @@ beaches <- beaches[!duplicated(beaches),]
 weather_data <- data.frame()
 
 # Enter date range (date = beginning date)
-date <- as.Date("2017/05/01")
-end_date <- as.Date("2017/09/30")
+date <- as.Date("2019/05/01")
+end_date <- as.Date("2019/09/30")
 
 ## Maximum 1000 free API requests allowed per day, use counter to enforce 1000 max (here and for loop)
 #counter <- 1
@@ -48,7 +48,7 @@ minute <- "00" # we are downloading by day, so this does not matter
 second <- "00" # we are downloading by day, so this does not matter
 
 #while (date <= end_date & counter <= 1000) {
-while (date <= end_date) { 
+while (date <= end_date) {
   year <- format(date, "%Y")
   month <- format(date, "%m")
   day <- format(date, "%d")
